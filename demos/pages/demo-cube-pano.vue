@@ -6,7 +6,7 @@
       <Pano
         @on-load="onLoad"
         type='cube'
-        source="assets/faces/pano_%s.jpg"></Pano>
+        source="https://uat.diakrit.com/orderfiles/610000/613800/6138463/panorama/33631-%s.jpg"></Pano>
       <div
         class="demo-loading"
         v-show="loading"></div>
@@ -25,7 +25,7 @@ const code = `
     <Pano
         @on-load="onLoad"
         type='cube'
-        source="assets/faces/pano_%s.jpg"></Pano>
+        source="https://uat.diakrit.com/orderfiles/610000/613800/6138463/panorama/33631-%s.jpg"></Pano>
 </template>
 <script>
     import { Pano } from 'vuejs-vr'
@@ -43,7 +43,7 @@ const htmlCode = `
         <Pano
             @on-load="onLoad"
             type='cube'
-            source="assets/faces/pano_%s.jpg">
+            source="https://uat.diakrit.com/orderfiles/610000/613800/6138463/panorama/33631-%s.jpg">
         </Pano>
     </div>
     #scripts#

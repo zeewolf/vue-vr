@@ -39,7 +39,7 @@ export default {
       panorama: null
     }
   },
-  
+
   created () {
     window.addEventListener('resize', this.onResize, false)
   },
@@ -84,12 +84,12 @@ export default {
 
       switch (this.type) {
         case 'cube':
-          var l = this.source.replace('%s', 'l')
-          var f = this.source.replace('%s', 'f')
-          var r = this.source.replace('%s', 'r')
-          var b = this.source.replace('%s', 'b')
-          var u = this.source.replace('%s', 'u')
-          var d = this.source.replace('%s', 'd')
+          var l = this.source.replace('%s', 'left') // left
+          var f = this.source.replace('%s', 'right') // front
+          var r = this.source.replace('%s', 'right-middle') // right
+          var b = this.source.replace('%s', 'left-middle') // back
+          var u = this.source.replace('%s', 'ceiling') // up (ceiling)
+          var d = this.source.replace('%s', 'floor') // down (floor)
           this.panorama = new PanoLens.CubePanorama([r, l, u, d, f, b])
           break
         case 'video':
